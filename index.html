@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+	
+
+
+	<div ng-app="" ng-init="qty=1; cost=2">
+		
+		<div>
+			Quantity:   <input type="number" min="0" ng-model="qty">
+		</div>
+
+		<div>
+			Costs:   <input type="number" min="0" ng-model="cost">
+		</div>
+
+<hr> 
+
+		<div>
+			<b>Total: </b> {{qty*cost | currency}}
+		</div>
+
+	</div>
+
+
+</body>
+</html>
